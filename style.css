@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Slab", serif;
+}
+
+
+body{
+    background-image:linear-gradient(to right top,rgb(31, 204, 190),rgb(85, 136, 230));
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.small__container{
+    padding: 10px;
+    text-shadow: 10px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    border-radius: 20px;
+    height: auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+#to-do{
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.title{
+    font-weight: 900;
+}
+.inner{
+    width: 100%;
+    margin-top: 30px;
+}
+#inputbox{
+    width: 70%;
+    height: 15px;
+    font-size: large;
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 10px;
+    border: solid 2px rgb(0, 195, 255);
+    color: white;
+
+}
+#btn{
+    padding: 15px;
+    background-color: rgb(30, 223, 126);
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    width: 15%;
+ 
+    
+}
+.inner__two{
+    width:90%;
+    margin-top: 20px;  
+    display: flex;
+    background-color: rgb(134, 133, 133);
+    flex-direction: column ;
+    border-radius: 20px;
+    box-shadow: 20px;
+}
+
+#to-do li{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: .5px solid rgb(169, 169, 252);
+    color: black;
+    font-weight: 900;
+    padding: 10px;
+    font-size: large;
+    border-radius: 10px;
+}
+#delete{
+    background-color: rgb(240, 0, 0);
+    padding: 10px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+}
+li button{
+    background-color: rgb(255, 0, 0);
+    padding: 10px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+@media screen and (max-width:800px) {
+    .container{
+        margin: 0;
+        justify-content: left;
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .small__container{
+        text-shadow: 10px;
+        color: black;
+        background: white;
+        border-radius: 10px;
+        width:80%;
+    }
+}
+@media screen and (max-width:600px) {
+    .container{
+        margin: 0;
+        justify-content: left;
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+    }
+    
+    .small__container{
+        text-shadow: 10px;
+        color: black;
+        background: white;
+        border-radius: 10px;
+        width:90%;
+    }
+    #to-do{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .title{
+        font-weight: 600;
+    }
+    .inner{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 10px;
+        margin-top: 30px;
+    }
+    #inputbox{
+        width: 70%;
+        height: fit-content;
+        font-size:medium;
+        font-weight: 600;
+        border-radius: 10px;
+        border: solid 2px rgb(88, 88, 188);
+        margin: 0;
+    
+    }
+    #btn{
+        font-size:medium;
+        font-weight: 600;
+        padding: 9px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: rgb(142, 142, 251);
+        cursor: pointer;
+        border-radius: 5px;
+        color: white;
+        width: 25%;
+
+     
+        
+    }
+    .inner__two{
+        width:100%;
+        margin-top: 20px;  
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.034);
+        flex-direction: column ;
+        border-radius: 20px;
+        box-shadow: 20px;
+    }
+    
+    #to-do li{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        gap: 20px;
+        background-color: rgba(148, 178, 248, 0.063);
+        border-bottom: .5px solid rgb(169, 169, 252);
+        color: black;
+        font-weight: 900;
+        padding: 10px;
+        font-size: large;
+        border-radius: 10px;
+    }
+    #delete{
+        background-color: rgb(255, 71, 71);
+        padding: 10px;
+        font-weight: 700;
+        color: white;
+        border: none;
+        border-radius: 10px;
+    }
+    li button{
+        background-color: rgb(255, 71, 71);
+        padding: 10px;
+        font-weight: 700;
+        color: white;
+        border: none;
+        border-radius: 10px;
+    }
+
+
+}
